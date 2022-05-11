@@ -26,6 +26,10 @@ public class Produto {
 	public String getFabricante() {
 		return fabricante;
 	}
+
+	public void setNome(String novoNome) { this.nome = novoNome; }
+
+	public void setFabricante(String novoFabricante) { this.fabricante = novoFabricante; }
 	
 	public String toString() {
 		return "Produto ID: " + getId() + " - Fabricante: " + getFabricante();
