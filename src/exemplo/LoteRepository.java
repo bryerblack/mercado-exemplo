@@ -1,8 +1,6 @@
 package exemplo;
 
-import java.util.Date;
-import java.util.HashMap;
-import java.util.Map;
+import java.util.*;
 
 public class LoteRepository {
 
@@ -56,5 +54,9 @@ public class LoteRepository {
 
     public String listLotes() {
         return "";
+    }
+
+    public List<Lote> getAll(){
+        return new ArrayList<Lote>(lotes.values());
     }
 }

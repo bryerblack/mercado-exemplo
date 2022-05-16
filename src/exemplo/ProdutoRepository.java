@@ -1,9 +1,6 @@
 package exemplo;
 
-import exemplo.Produto;
-
-import java.util.HashMap;
-import java.util.Map;
+import java.util.*;
 
 public class ProdutoRepository {
 
@@ -45,5 +42,9 @@ public class ProdutoRepository {
 
     public String listProduto() {
         return "";
+    }
+
+    public List<Produto> getAll(){
+        return new ArrayList<>(catalogo.values());
     }
 }
